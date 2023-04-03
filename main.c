@@ -28,14 +28,14 @@ int main(int argc, char const *argv[])
     }
 
     int n_byte = atoi(argv[1]);
-    int time = atoi(argv[2]);
+    int times = atoi(argv[2]);
     FILE *fp = tmpfile();
 
     char *buf = (char *)malloc(n_byte * sizeof(char));
     memset(buf, '6', n_byte);
 
     double ctime = cputime(), rtime = realtime();
-    for (int i = 0; i < time; i++)
+    for (int i = 0; i < times; i++)
     {
         fwrite(buf, n_byte, 1, fp);
     }
