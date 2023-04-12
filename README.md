@@ -6,7 +6,7 @@ linux with gcc
 
 ## Compile
 
-gcc main.c
+gcc main.c -lz
 
 ## Usage
 
